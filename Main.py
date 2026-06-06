@@ -20,11 +20,9 @@ ctk.set_default_color_theme("blue")
 class DucoDashboard(ctk.CTk):
     def __init__(self):
         super().__init__()
-        # ... (đoạn code của bạn)
         icon_path = get_resource_path("duino.ico")
         if os.path.exists(icon_path):
             self.iconbitmap(icon_path)
-        # ...
         self.title("Duino-Coin DashBoard")
         self.geometry("500x662")
 
